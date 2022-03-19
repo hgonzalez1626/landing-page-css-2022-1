@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');/*Cargo fuentes desde google fonts directamente*/
+
+body{    
+    margin: 0;
+    padding: 0;
+    font-family: "Roboto";
+    background: url("https://landing.zytheme.com/siena/assets/images/background/bg-1.png");
+    background-position: 0;
+}
+
+header{
+    /*border: 1px solid red;/*CON ESTO VERIFICO QUE MARGEN TIENE*/
+    display: flex;
+    margin-top: 30px;    
+}
+
+.container{
+    padding: 0 60px;
+    border: 1px solid red;
+}
+
+.logo{
+    display: flex;    
+    align-items: center;
+    margin: 0 30px;
+}
+
+nav{
+    flex: 1;
+    /*border: 1px solid red;*/
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+nav ul{
+    /*border: 1px solid red;/*CON ESTO VERIFICO QUE MARGEN TIENE*/
+    display: flex;
+    /*flex-direction:row-reverse;*/
+    justify-content: end;
+    padding: 0;
+}
+
+nav ul li{
+    
+    list-style: none;/*QUITAR LAS VIÑETAS O INGRESAR OTROS ELEMENTOS DENTRO DEL LIST(*,-, .)*/
+    margin: 0 20px;
+}
+
+nav ul li a{
+    color: #6262A0;/*COLOR DEL TEXTO*/
+    font-size: 1.0em;/*TAMAÑO RELATIVO*/
+    text-decoration: none;/*anular underline*/    
+}
+
+nav ul li a:hover{
+    color: #664FFA;/*cuando me paro sobre la palabra*/
+}
+
+h1{
+    color: #6262A0;
+    font-size: 3.2em;
+    font-weight: 400;/*Toma la variacion regular 400 de Roboto*/
+    margin: 40PX 0 25px;
+}
+
+h2{
+    color: #6262A0;
+    font-size: 2.2em;
+    font-weight: 400;/*Toma la variacion regular 400 de Roboto*/
+    margin: 40PX 0 25px;
+    text-align: center;
+}
+
+h3{
+    color: #6262A0;
+    font-size: 2.2em;
+    font-weight: 400;/*Toma la variacion regular 400 de Roboto*/
+    margin: 40PX 0 25px;
+    text-align: left;
+}
+
+h4{
+    color: #6262A0;
+    font-size: 1.4em;
+    font-weight: 400;
+    text-align: center;
+    padding: 20px;
+    margin: 15px 0;
+}
+
+p{
+    color: #ABABC7;
+    font-size: 1.0em;
+}
+
+p.center{
+    text-align: center;
+}
+
+p span{
+    font-size: 0.8em;
+}
+
+.form-container{
+    /*border: 1px solid red;*/
+    /*padding: 20px 40px;*/
+}
+
+.field-form label{
+    color: #6262A0;
+    font-size: 0.95em;
+    display: block;
+    margin: 10px 0;
+    
+}
+
+.field-form input{
+    background-color: #f7f6ff;
+    color: #222;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    font-size: 1.1em;
+    padding: 6px 6px 6px 12px;
+    outline: none;
+    width: 100%;
+    margin-bottom: 6px;
+}
+
+.btn-primary{
+    width: 100%;
+    background-color: #664FFA;
+    border-radius: 6px;
+    color: #fff;
+    text-transform: uppercase;/*mayusculas*/
+    padding: 15px 10px;
+    border: none;
+    margin: 10px 0;
+    font-size: 0.9em;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.btn-primary :hover{
+    background-color: #3b1df9;
+
+}
+
+article{
+    margin-top: 80px;
+    display: flex;
+}
+
+.content-slide1{
+    flex: 65;
+    padding: 0 20px;
+}
+
+#box-trial{
+    flex: 35;
+    color: #fff;
+    padding: 10px 40px;
+    box-shadow: 3px 6px 8px 0px rgba(189,189,189,0.76);
+    -webkit-box-shadow: 3px 6px 8px 0px rgba(189,189,189,0.76);
+    -moz-box-shadow: 3px 6px 8px 0px rgba(189,189,189,0.76);
+}
+
+.content-slide2{    
+    text-align: center;
+    padding: 150px  0px;
+    
+}
+
+.content-slide2-features{
+    text-align: center;
+    display: flex; 
+    padding: 50px 0;   
+    
+}
+
+.content-slide2-features-1{        
+      margin: 20px;
+}
+
+.content-slide2-features-1A{ 
+    display: flex;             
+    text-align: center;
+}
+.content-slide2-features-1AA{         
+    flex: 45;
+    
+}
+.content-slide2-features-1AB{         
+    flex: 10;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    text-align: center; 
+    background-color: #5c48e0;   
+   
+}
+.content-slide2-features-1AC{         
+    flex: 45;
+    
+}
+
+.content-slide2-features-1AD{         
+    flex: 10;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    text-align: center; 
+    background-color: #02e6b8;   
+    
+}
+
+.content-slide2-features-1AE{         
+    flex: 10;
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 50%;
+    margin-bottom: 30px;
+    text-align: center; 
+    background-color: #ff8c00;   
+    
+}
+
+.content-slide3{ 
+    display: flex;   
+    text-align: left;
+    padding: 0 0 200px;        
+}
+
+.content-slide3-features-2A{    
+    
+    padding: 300px 0px 0px 60px;
+    
+}
+
+.content-slide3-features-2B{    
+   
+    padding: 200px 60px 0px 0px;
+    
+}
+
+.content-slide3-features-2B ul li{       
+    color: #ABABC7;
+    font-size: 1.0em;
+    margin-bottom: 10px;
+    content:icon;
+    
+}
